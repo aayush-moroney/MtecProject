@@ -1,0 +1,29 @@
+load 'adj_meetUp_workspace.mat';
+strct = struct(GROUPS,1,EVENTS,2,USERS,3,TAGS,4,VENUES,5,adj_event_group,adjc_evnt_grp,adj_event_users,adjc_evnt_usrs,adj_event_venue,adjc_evnt_vnue,adj_group_tag,adjc_grp_tags,adj_user_group,adjc_user_groups,adj_user_tag,adjc_user_tags,metaData,meta,NNodes,sizes,Graph,completeG);
+adj_event_group = adjc_evnt_grp;
+adj_event_users = adjc_evnt_usrs;
+adj_event_venue = adjc_evnt_vnue;
+adj_group_tag = adjc_grp_tags;
+adj_user_group = adjc_user_groups;
+adj_user_tag = adjc_user_tags;
+metaData = meta;
+Graph = completeG;
+NNodes = sizes;
+strct = struct(GROUPS,1,EVENTS,2,USERS,3,TAGS,4,VENUES,5,adj_event_group,adjc_evnt_grp,adj_event_users,adjc_evnt_usrs,adj_event_venue,adjc_evnt_vnue,adj_group_tag,adjc_grp_tags,adj_user_group,adjc_user_groups,adj_user_tag,adjc_user_tags,metaData,meta,NNodes,sizes,Graph,completeG);
+strct = struct('GROUPS',1,'EVENTS',2,'USERS',3,'TAGS',4,'VENUES',5,'adj_event_group',adjc_evnt_grp,'adj_event_users',adjc_evnt_usrs,'adj_event_venue',adjc_evnt_vnue,'adj_group_tag',adjc_grp_tags,'adj_user_group',adjc_user_groups,'adj_user_tag',adjc_user_tags,'metaData',meta,'NNodes',sizes,'Graph',completeG);
+save strct 'structure.mat';
+save 'structure.mat' strct;
+clear adjc_evnt_grp adjc_evnt_usrs adjc_evnt_usrs
+clear adjc_evnt_vnue adjc_grp_tags adjc_user_groups adjc_user_tags adj_event_group adj_event_users
+clear adj_event_venue adj_group_tag adj_user_group adj_user_tag
+clear meta
+clear metaData
+clear GROUPS EVENTS VENUES Graph
+clear NNodes
+clear TAGS USERS
+clear ans
+ckear completeG
+clear completeG
+clear file
+clear i j sizes q tmp
+clear A
