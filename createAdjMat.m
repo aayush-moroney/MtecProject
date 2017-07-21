@@ -1,5 +1,5 @@
-function mat = createAdjMat(path)
-struct = load(path);
+function mat = createAdjMat(struct)
+%struct = load(path);
 %struct = struct.meetUpTrain;
 count = struct.entityCnt;
 metaData = zeros(count);
